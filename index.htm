@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Nick's ToDo List</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+</head>
+
+<body>
+    <div class='background'></div>
+    <div class="everything"></div>
+    <div class="main-container">
+        <div class="headingblock"><h1>Nick's to do list</h1><button class="rename" onclick="renameHead()">Rename</button></div>
+        <input type="text" onkeydown="isReturn(event)" id="textinput" placeholder="Enter new item.." autofocus>
+        <button onclick="add()" id="addButt">Add</button>
+        <div class="modal">
+            <h2 class="modaltext">Error</h2>
+            <button class="modalButton" onclick="closeModal()" tabindex="0">Ok</button>
+        </div>
+        <h2 class="counter">You currently have 0 things to do</h2>
+        <ul id="list-area"></ul>
+      
+    </div>
+</body>
+<script src='main.js'></script>
+
+</html>

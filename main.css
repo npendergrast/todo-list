@@ -1,0 +1,152 @@
+body {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.background {
+    background: url("Back.JPG");
+    position: fixed;
+    background-size: cover;
+    background-position: 0% 60%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    filter: blur(1px);
+    opacity: 0.4;
+}
+
+.main-container {
+    display: block;
+    width: 400px;
+    margin: auto;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+    text-align: center;
+    height: 600px;
+    box-shadow: 0 0 4px 4px rgb(110, 105, 105);
+    background-color: whitesmoke;
+    margin-top: 30px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.headingblock {
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    width: 70%;
+    padding: 2px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.rename {
+    width: 60px;
+    padding: 2px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+#textinput {
+    width: 80%;
+    margin-bottom: 5px;
+}
+
+#addButt {
+    float: none;
+    padding: 2px;
+    width: 40px;
+}
+
+ul li {
+    cursor: pointer;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: pink;
+    transition: 0.4s;
+    width: 360px;
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+ul li:nth-child(odd) {
+    background-color: plum;
+}
+
+ul li:hover, li.done:hover {
+    background-color: rgb(240, 116, 116);
+    color: black;
+}
+
+ul li.done {
+    font-style: italic;
+    text-decoration: line-through;
+    color: green;
+    background-color: lightgreen;
+}
+
+ul {
+    width: 380px;
+    padding: 0px;
+    text-align: center;
+    margin: auto;
+}
+
+li {
+    display: inline-block;
+    width: 200px;
+}
+
+li button {
+    float: right;
+    text-decoration: none;
+}
+
+.modal {
+    height: 100px;
+    width: 220px;
+    margin: auto;
+    border: 2px solid black;
+    text-align: center;
+    vertical-align: middle;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    display: none;
+    position: fixed;
+    z-index: 200;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modaltext {
+    padding: 5px;
+    padding-bottom: 0px;
+}
+
+.everything {
+    background: rgb(0, 0, 0,0.5);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
