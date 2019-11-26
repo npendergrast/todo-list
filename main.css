@@ -89,8 +89,12 @@ ul li:nth-child(odd) {
 }
 
 ul li:hover {
-    background-color: rgb(138, 188, 207);
+    background-color: rgb(230, 146, 160);
     color: black;
+}
+
+ul li:nth-child(odd):hover {
+    background-color: rgb(187, 106, 187);
 }
 
 ul li.done {
@@ -98,6 +102,10 @@ ul li.done {
     text-decoration: line-through;
     color: green;
     background-color: lightgreen;
+}
+
+ul li.done:hover {
+    background:  rgb(102, 196, 102);
 }
 
 ul {
