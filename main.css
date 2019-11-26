@@ -88,8 +88,8 @@ ul li:nth-child(odd) {
     background-color: plum;
 }
 
-ul li:hover, li.done:hover {
-    background-color: rgb(240, 116, 116);
+ul li:hover {
+    background-color: rgb(138, 188, 207);
     color: black;
 }
 
